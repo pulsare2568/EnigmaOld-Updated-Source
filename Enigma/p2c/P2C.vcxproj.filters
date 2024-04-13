@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="frontend\protection\process\AntiCrack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\framework\imgui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\framework\imgui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\framework\imgui\imgui_impl_dx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\framework\imgui\imgui_impl_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\framework\imgui\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\framework\imgui\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frontend\protection\encryption\function\spoof.hpp" />
+    <ClInclude Include="frontend\protection\encryption\string\xor.hpp" />
+    <ClInclude Include="includes.hpp" />
+    <ClInclude Include="backend\globals.hpp" />
+    <ClInclude Include="backend\game\offsets.hpp" />
+    <ClInclude Include="backend\game\world\sdk\worldtoscreen.hpp" />
+    <ClInclude Include="backend\framework\d3d\d3dx9.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9anim.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9core.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9effect.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9math.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9mesh.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9shader.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9shape.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9tex.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9xof.h" />
+    <ClInclude Include="backend\game\world\entity.hpp" />
+    <ClInclude Include="backend\game\world\overlay\overlay.hpp" />
+    <ClInclude Include="backend\game\world\overlay\render.hpp" />
+    <ClInclude Include="backend\game\aimbot\function.hpp" />
+    <ClInclude Include="backend\game\aimbot\movement\mouse.hpp" />
+    <ClInclude Include="backend\game\aimbot\movement\controller.hpp" />
+    <ClInclude Include="backend\game\world\sdk\decrypt.hpp" />
+    <ClInclude Include="backend\game\world\sdk\hexray.hpp" />
+    <ClInclude Include="backend\game\utils.h" />
+    <ClInclude Include="backend\impl\imports.hpp" />
+    <ClInclude Include="backend\game\world\overlay\hijack.h" />
+    <ClInclude Include="backend\impl\ctx\ctx.hpp" />
+    <ClInclude Include="backend\impl\hash.hpp" />
+    <ClInclude Include="backend\impl\include.hpp" />
+    <ClInclude Include="frontend\protection\encryption\function\lazy.h" />
+    <ClInclude Include="backend\auth\auth.h" />
+    <ClInclude Include="backend\auth\auth.hpp" />
+    <ClInclude Include="backend\auth\json.hpp" />
+    <ClInclude Include="frontend\protection\process\AntiCrack.h" />
+    <ClInclude Include="backend\framework\imgui\fonts\burbank.hpp" />
+    <ClInclude Include="backend\framework\imgui\fonts\font.h" />
+    <ClInclude Include="backend\framework\imgui\fonts\iconcpp.h" />
+    <ClInclude Include="backend\framework\imgui\fonts\icons.h" />
+    <ClInclude Include="backend\framework\imgui\imconfig.h" />
+    <ClInclude Include="backend\framework\imgui\imgui.h" />
+    <ClInclude Include="backend\framework\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="backend\framework\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="backend\framework\imgui\imgui_internal.h" />
+    <ClInclude Include="backend\framework\imgui\imgui_settings.h" />
+    <ClInclude Include="backend\framework\imgui\imstb_rectpack.h" />
+    <ClInclude Include="backend\framework\imgui\imstb_textedit.h" />
+    <ClInclude Include="backend\framework\imgui\imstb_truetype.h" />
+    <ClInclude Include="backend\framework\fonts\image.h" />
+    <ClInclude Include="backend\framework\fonts\font.h" />
+    <ClInclude Include="backend\kernel\driver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="backend\framework\d3d\d3d9.lib" />
+    <Library Include="backend\framework\d3d\d3d11.lib" />
+    <Library Include="backend\framework\d3d\d3dx9.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="backend\framework\d3d\d3dx9math.inl" />
+  </ItemGroup>
+</Project>

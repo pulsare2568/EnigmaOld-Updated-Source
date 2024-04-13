@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a3c0667a-d4d7-4507-8177-e666d7913ac5}</ProjectGuid>
+    <RootNamespace>P2C</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Enigma</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(MSBuildProjectDirectory)\build</OutDir>
+    <IntDir>$(MSBuildProjectDirectory)\build\intermediates</IntDir>
+    <TargetName>Enigma Public</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>D:\projects\Enigma\Enigma Public\p2c\backend\framework\freetype\include;D:\projects\Enigma\Enigma Public\p2c\backend\framework\freetype;backend\mapper\service;backend\mapper\utils;backend\mapper\kdmapper;backend\mapper\intel driver;backend\mapper\mapper;backend\mapper\executable;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>backend\auth\library_x64.lib;backend\auth\libcurl.lib;d3d11.lib;d3dcompiler.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="backend\framework\imgui\imgui.cpp" />
+    <ClCompile Include="backend\framework\imgui\imgui_draw.cpp" />
+    <ClCompile Include="backend\framework\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="backend\framework\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="backend\framework\imgui\imgui_tables.cpp" />
+    <ClCompile Include="backend\framework\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="frontend\protection\process\AntiCrack.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="backend\auth\auth.h" />
+    <ClInclude Include="backend\auth\auth.hpp" />
+    <ClInclude Include="backend\auth\json.hpp" />
+    <ClInclude Include="backend\framework\d3d\d3dx9.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9anim.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9core.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9effect.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9math.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9mesh.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9shader.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9shape.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9tex.h" />
+    <ClInclude Include="backend\framework\d3d\d3dx9xof.h" />
+    <ClInclude Include="backend\framework\fonts\font.h" />
+    <ClInclude Include="backend\framework\fonts\image.h" />
+    <ClInclude Include="backend\framework\imgui\fonts\burbank.hpp" />
+    <ClInclude Include="backend\framework\imgui\fonts\font.h" />
+    <ClInclude Include="backend\framework\imgui\fonts\iconcpp.h" />
+    <ClInclude Include="backend\framework\imgui\fonts\icons.h" />
+    <ClInclude Include="backend\framework\imgui\imconfig.h" />
+    <ClInclude Include="backend\framework\imgui\imgui.h" />
+    <ClInclude Include="backend\framework\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="backend\framework\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="backend\framework\imgui\imgui_internal.h" />
+    <ClInclude Include="backend\framework\imgui\imgui_settings.h" />
+    <ClInclude Include="backend\framework\imgui\imstb_rectpack.h" />
+    <ClInclude Include="backend\framework\imgui\imstb_textedit.h" />
+    <ClInclude Include="backend\framework\imgui\imstb_truetype.h" />
+    <ClInclude Include="backend\game\aimbot\function.hpp" />
+    <ClInclude Include="backend\game\aimbot\movement\controller.hpp" />
+    <ClInclude Include="backend\game\aimbot\movement\mouse.hpp" />
+    <ClInclude Include="backend\game\offsets.hpp" />
+    <ClInclude Include="backend\game\utils.h" />
+    <ClInclude Include="backend\game\world\entity.hpp" />
+    <ClInclude Include="backend\game\world\overlay\hijack.h" />
+    <ClInclude Include="backend\game\world\overlay\overlay.hpp" />
+    <ClInclude Include="backend\game\world\overlay\render.hpp" />
+    <ClInclude Include="backend\game\world\sdk\decrypt.hpp" />
+    <ClInclude Include="backend\game\world\sdk\hexray.hpp" />
+    <ClInclude Include="backend\game\world\sdk\worldtoscreen.hpp" />
+    <ClInclude Include="backend\globals.hpp" />
+    <ClInclude Include="backend\impl\ctx\ctx.hpp" />
+    <ClInclude Include="backend\impl\hash.hpp" />
+    <ClInclude Include="backend\impl\imports.hpp" />
+    <ClInclude Include="backend\impl\include.hpp" />
+    <ClInclude Include="backend\kernel\driver.h" />
+    <ClInclude Include="frontend\protection\encryption\function\lazy.h" />
+    <ClInclude Include="frontend\protection\process\AntiCrack.h" />
+    <ClInclude Include="includes.hpp" />
+    <ClInclude Include="frontend\protection\encryption\function\spoof.hpp" />
+    <ClInclude Include="frontend\protection\encryption\string\xor.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="backend\framework\d3d\d3d11.lib" />
+    <Library Include="backend\framework\d3d\d3d9.lib" />
+    <Library Include="backend\framework\d3d\d3dx9.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="backend\framework\d3d\d3dx9math.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
